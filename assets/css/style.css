@@ -1,0 +1,159 @@
+:root {
+  --primary: hsl(215, 51%, 70%);
+  --primary-lighter: hsl(178, 100%, 50%);
+
+  --neutral: hsl(216, 50%, 16%);
+  --neutral-lighter: hsl(215, 32%, 27%);
+  --neutral-darker: hsl(217, 54%, 11%);
+
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* STYLE FRONTEND MENTOR */
+.attribution {
+  font-size: 0.688rem;
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+  margin-top: 2rem;
+  color: var(--color-white);
+}
+
+.attribution a {
+  color: blue;
+}
+
+/* Generic rules */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--neutral-darker);
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+/* LAYOUT */
+.container {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  background-color: var(--neutral);
+  max-width: 325px;
+  border-radius: 1rem;
+}
+
+.article__header,
+.article__section,
+.article__footer {
+  margin: 25px;
+}
+
+.article__header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.article__image {
+  max-width: 275px;
+  border-radius: 0.5rem;
+}
+
+.article__header:hover .article__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article__overlay {
+  display: none;
+  position: absolute;
+  border-radius: 0.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-lighter);
+  opacity: 0.5;
+}
+
+.article__title {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: larger;
+  padding-bottom: 25px
+}
+
+.article__title:hover {
+  color: var(--primary-lighter);
+}
+
+.article__text {
+  font-weight: 400;
+  color: var(--primary);
+  padding-bottom: 25px
+}
+.article__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 25px
+}
+
+.article__orderInfo {
+  font-weight: 400;
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+}
+
+.article__orderInfo--price {
+  color: var(--primary-lighter);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.article__icon {
+  margin-right: .5rem;
+}
+
+.article__section {
+  border-bottom: solid 1px var(--neutral-lighter);
+}
+
+.article__link {
+  font-weight: 400;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.article__link--user {
+  color: var(--color-white);
+}
+
+.article__link:hover {
+  color: var(--primary-lighter);
+}
+
+.article__footer {
+  color: var(--primary);
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+}
+.article__avatar {
+  width: 30px;
+  height: auto;
+
+  border-radius: 50%;
+  border: solid 2px var(--color-white);
+
+  margin-right: 1rem;
+}
